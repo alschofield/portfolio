@@ -12,7 +12,7 @@ export default function Anchor(props) {
 
   return (
     <Item {...props}>
-      { props.value }
+      { props.children }
     </Item>
   );
 }

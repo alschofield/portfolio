@@ -2,7 +2,6 @@ import { configureStore } from '@reduxjs/toolkit';
 
 // pages
 import homeReducer from '../features/pages/home/homeSlice';
-import merchandiseReducer from '../features/pages/merchandise/merchandiseSlice';
 import musicReducer from '../features/pages/music/musicSlice';
 import projectsReducer from '../features/pages/projects/projectsSlice';
 
@@ -17,7 +16,6 @@ export default configureStore({
   reducer: {
     // page
     home: homeReducer,
-    merchandise: merchandiseReducer,
     music: musicReducer,
     projects: projectsReducer,
 

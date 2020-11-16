@@ -7,7 +7,9 @@ export default function NavItem(props) {
   console.log(props)
   if (props.type === 'anchor') {
     return (
-      <Anchor {...props} />
+      <Anchor {...props}>
+        { props.value }
+      </Anchor>
     );
   } else if (props.type === 'button') {
     return (
