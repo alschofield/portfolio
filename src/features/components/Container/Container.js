@@ -7,6 +7,7 @@ export default function Container(props) {
     display: ${props => props.display|| 'block'};
     width: ${props => props.width || '100%'};
     height: ${props => props.height || '100%'};
+    min-height: ${props => props.minHeight || 'initial'};
     top: ${props => props.top || 'initial'};
     left: ${props => props.left || 'initial'};
     background: ${props => props.background || 'initial'};
