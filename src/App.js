@@ -8,7 +8,6 @@ import { Footer } from './features/main-components/footer/Footer';
 import { Nav } from './features/main-components/nav/Nav';
 import { Home } from './features/pages/home/Home';
 import { Music } from './features/pages/music/Music';
-import { Merchandise } from './features/pages/merchandise/Merchandise';
 import { Projects } from './features/pages/projects/Projects';
 import './App.css';
 
@@ -23,9 +22,6 @@ function App() {
         <Switch>
           <Route path="/music">
             <Music />
-          </Route>
-          <Route path="/merchandise">
-            <Merchandise />
           </Route>
           <Route path="/projects">
             <Projects />
