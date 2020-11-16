@@ -2,23 +2,25 @@ import React from 'react';
 import Anchor from '../../../components/Anchor/Anchor';
 import Button from '../../../components/Button/Button';
 import Container from '../../../components/Container/Container';
+import Text from '../../../components/Text/Text'
 
 export default function NavItem(props) {
-  console.log(props)
   if (props.type === 'anchor') {
     return (
-      <Anchor {...props}>
-        { props.value }
+      <Anchor {...props} >
+        <Text>{ props.value }</Text>
       </Anchor>
     );
   } else if (props.type === 'button') {
     return (
-      <Button {...props} />
+      <Button {...props} >
+        <Text>{ props.value }</Text>
+      </Button>
     );
   } else {
     return (
-      <Container {...props}>
-
+      <Container {...props} >
+        <Text>{ props.value }</Text>
       </Container>
     );
   }

@@ -3,16 +3,15 @@ import styled from 'styled-components'
 
 export default function Button(props) {
   const Item = styled.button`
-    position: relative;
-    display: block;
-    background: purple;
-    min-width: 40px;
-    height: 40px;
+    position: ${props => props.position || 'relative'};
+    display: ${props => props.display || 'block'};
+    min-width: ${props => props.minWidth || '40px'};
+    height: ${props => props.height || 'auto'};
   `;
 
   return (
-    <Item {...props}>
-      { props.value }
+    <Item>
+      { props.children }
     </Item>
   );
 }

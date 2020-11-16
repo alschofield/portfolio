@@ -14,3 +14,5 @@
 //   // should have switch component
 //   // should have home, music, merchandise, and projects routes
 // });
+
+// https://www.youtube.com/watch?v=AU1hZ9OA7f0
