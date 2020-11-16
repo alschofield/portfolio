@@ -1,11 +1,14 @@
 import React from 'react';
-// import styles from './Home.module.css';
+import Container from '../../components/Container/Container';
 
 export function Home() {
+  const containerStyles = {
+    paddingTop: '40px'
+  }
 
   return (
-    <div>
+    <Container { ...containerStyles } >
 
-    </div>
+    </Container>
   );
 }

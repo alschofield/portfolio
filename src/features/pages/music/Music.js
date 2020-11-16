@@ -1,11 +1,14 @@
 import React from 'react';
-// import styles from './Music.module.css';
+import Container from '../../components/Container/Container';
 
 export function Music() {
+  const containerStyles = {
+    paddingTop: '40px'
+  }
 
   return (
-    <div>
+    <Container { ...containerStyles } >
 
-    </div>
+    </Container>
   );
 }

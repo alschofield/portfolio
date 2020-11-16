@@ -10,7 +10,8 @@ export function Nav() {
     width: '100%',
     height: '40px',
     top: '0px',
-    left: '0px'
+    left: '0px',
+    zIndex: '1'
   }
 
   return (
