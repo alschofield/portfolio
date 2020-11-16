@@ -12,5 +12,5 @@
 //   // );
 
 //   // should have switch component
-//   // should have home, music, merchandise, and projects routes
+//   // should have home, music and projects routes
 // });

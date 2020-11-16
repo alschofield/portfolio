@@ -9,6 +9,7 @@ how exactly to handle
   list item
   image
   header option (h1-h6)
+tests for all base components
 
 design for home, projects, and music page
 youtube api or spotify api, something
