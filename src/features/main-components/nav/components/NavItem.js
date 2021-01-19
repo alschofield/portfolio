@@ -7,21 +7,25 @@ import Text from '../../../components/Text/Text'
 export default function NavItem(props) {
   if (props.type === 'anchor') {
     return (
-      <Anchor {...props} >
+      <Anchor {...props}>
         <Text>{ props.value }</Text>
       </Anchor>
     );
   } else if (props.type === 'button') {
     return (
-      <Button {...props} >
+      <Button {...props}>
         <Text>{ props.value }</Text>
       </Button>
     );
   } else {
     return (
-      <Container {...props} >
+      <Container {...props}>
         <Text>{ props.value }</Text>
       </Container>
     );
   }
+}
+
+NavItem.defaultProps = {
+  'data-testid': 'navitem-container'
 }
