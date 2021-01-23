@@ -1,14 +1,21 @@
 import React from 'react';
 import Anchor from '../../../components/Anchor/Anchor';
 import Button from '../../../components/Button/Button';
+import Image from '../../../components/Image/Image';
 import Container from '../../../components/Container/Container';
-import Text from '../../../components/Text/Text'
+import Text from '../../../components/Text/Text';
 
 export default function NavItem(props) {
   if (props.type === 'anchor') {
     return (
       <Anchor {...props}>
         <Text>{ props.value }</Text>
+      </Anchor>
+    );
+  } else if (props.type === 'image') {
+    return (
+      <Anchor {...props}>
+        <Image {...props} />
       </Anchor>
     );
   } else if (props.type === 'button') {

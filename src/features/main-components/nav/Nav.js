@@ -6,7 +6,7 @@ export default function Nav() {
   const styles = {
     position: 'fixed',
     display: 'flex',
-    background: 'purple',
+    background: '#111111',
     width: '100%',
     height: '40px',
     top: '0px',
@@ -16,7 +16,7 @@ export default function Nav() {
 
   return (
     <Container { ...styles } data-testid='nav-container'>
-      <NavItem type='anchor' value='Home' href='/home' />
+      <NavItem type='image' height="35px" paddingTop="1px" paddingLeft="5px" src={`${process.env.PUBLIC_URL}/scho-logo.png`} value='Home' href='/home' />
       {/* <NavItem type="anchor" value="Merch" href="https://scho.clothing" /> */}
     </Container>
   );

@@ -1,20 +1,39 @@
 import React from 'react';
 import styled from 'styled-components';
+import ListItem from './components/ListItem';
 
-const Item = styled.ul`
-`;
+const sharedStyles = ``;
+
+const Lists = {
+  ul: styled.ul`${sharedStyles}`,
+  ol: styled.ol`${sharedStyles}`
+}
 
 // add ability to do ul or ol
-// i think this should accept data passed to it for a defulat list as well as have the list wrapper exported
-//  so if there is a data prop it renders list items, if not it will accept children
 export default function List(props) {
-  return (
-    <Item {...props}>
-      { props.children }
-    </Item>
-  );
+  const Item = Lists[props.type]
+
+  switch(Array.isArray(props.list)) {
+    case true:
+      return (
+        <Item {...props}>
+          { props.list.map((item, index) => {
+            return (
+              <ListItem key={index}>{ item }</ListItem>
+            )
+          }) }
+        </Item>
+      )
+    default:
+      return (
+        <Item {...props}>
+          { props.children }
+        </Item>
+      )
+  }
 }
 
 List.defaultProps = {
+  type: 'ul',
   'data-testid': 'list-container'
 }

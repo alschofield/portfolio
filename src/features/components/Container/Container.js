@@ -5,8 +5,10 @@ const Item = styled.div`
   position: ${props => props.position || 'relative'};
   display: ${props => props.display|| 'block'};
   width: ${props => props.width || 'initial'};
+  min-width: ${props => props.minWidth || 'initial'};
   height: ${props => props.height || 'initial'};
   min-height: ${props => props.minHeight || 'initial'};
+  color: ${props => props.color || 'initial'};
   top: ${props => props.top || 'initial'};
   left: ${props => props.left || 'initial'};
   right: ${props => props.right || 'initial'};
@@ -19,6 +21,8 @@ const Item = styled.div`
   padding-top: ${props => props.paddingTop || 'initial'};
   margin: ${props => props.margin || 'initial'};
   z-index: ${props => props.zIndex || 'initial'};
+  justify-content: ${props => props.justifyContent || 'initial'};
+  align-items: ${props => props.alignItems || 'initial'};
 `;
 
 export default function Container(props) {
