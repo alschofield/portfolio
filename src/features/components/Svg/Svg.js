@@ -13,5 +13,7 @@ export default function Svg(props) {
 }
 
 Svg.defaultProps = {
-  'data-testid': 'svg-container'
+  'data-testid': 'svg-container',
+  viewBox: 'none',
+  preserveAspectRatio: 'none',
 }

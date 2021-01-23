@@ -9,7 +9,6 @@ const Lists = {
   ol: styled.ol`${sharedStyles}`
 }
 
-// add ability to do ul or ol
 export default function List(props) {
   const Item = Lists[props.type]
 
