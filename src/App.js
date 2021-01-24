@@ -11,12 +11,10 @@ import Home from './features/pages/home/Home';
 import './App.css';
 import { ThemeProvider, themes } from './themes';
 
-// import './api/server'
-
 class App extends React.Component {
   state = {
-    themeName: 'light',
-    theme: themes.light
+    themeName: 'dark',
+    theme: themes.dark
   };
 
   handleThemeToggle = () => {

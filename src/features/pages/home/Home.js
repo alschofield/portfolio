@@ -10,9 +10,11 @@ class Home extends React.Component {
     return (
       <Container theme={this.props.theme.home.container} data-testid='home-container'>
         <Header>Current Projects</Header>
-        <List list={['portfolio website', 'DWC (direct water capture)']} />
+        <List list={['portfolio website']} />
+        <Header>Projects on Hold</Header>
+        <List list={['DWC (direct water capture)']} />
         <Header>Future Projects</Header>
-        <List list={['podcast sounds cool', 'music sounds cool', 'AI/ML is cool']} />
+        <List list={['Chatbot', 'Learn Java/C/or something', 'some sort of website for my portfolio']} />
       </Container>
     );
   }
