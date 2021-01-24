@@ -2,6 +2,7 @@ import React from 'react';
 import Anchor from '../../../components/Anchor/Anchor';
 import Button from '../../../components/Button/Button';
 import Image from '../../../components/Image/Image';
+import Icon from '../../../components/Icon/Icon';
 import Container from '../../../components/Container/Container';
 import Text from '../../../components/Text/Text';
 
@@ -19,6 +20,12 @@ class NavItem extends React.Component {
       return (
         <Anchor {...this.props}>
           <Image {...this.props} />
+        </Anchor>
+      );
+    } else if (this.props.type === 'icon') {
+      return (
+        <Anchor {...this.props}>
+          <Icon {...this.props} />
         </Anchor>
       );
     } else if (this.props.type === 'button') {

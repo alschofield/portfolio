@@ -44,4 +44,3 @@ export default function Image(props) {
 Image.defaultProps = {
   'data-testid': 'image-container'
 }
-
