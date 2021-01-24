@@ -1,19 +1,16 @@
 import React from 'react';
 import Container from '../../components/Container/Container';
 
-export default function Footer() {
-  const containerStyles = {
-    display: 'flex',
-    height: '60px',
-    background: '#444444',
-    color: '#F8F4EC',
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
+import { withTheme } from '../../../themes';
 
-  return (
-    <Container { ...containerStyles } data-testid='footer-container'>
-      Scho Technologies
-    </Container>
-  );
+class Footer extends React.Component {
+  render() {
+    return (
+      <Container theme={this.props.theme.footer.container} data-testid='footer-container'>
+        Scho Technologies
+      </Container>
+    );
+  }
 }
+
+export default withTheme(Footer);

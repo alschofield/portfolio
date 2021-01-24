@@ -9,25 +9,40 @@ import Nav from './features/main-components/nav/Nav';
 import Container from './features/components/Container/Container';
 import Home from './features/pages/home/Home';
 import './App.css';
+import { ThemeProvider, themes } from './themes';
 
 // import './api/server'
 
-function App() {
-  return (
-    <Router>
-      <Container data-testid="app-container">
-        <Nav />
+class App extends React.Component {
+  state = {
+    themeName: 'light',
+    theme: themes.light
+  };
 
-        <Switch>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+  handleThemeToggle = () => {
+    const name = (this.state.themeName === 'light') ? 'dark' : 'light';
+    this.setState({ theme: themes[name], themeName: name });
+  };
 
-        <Footer />
-      </Container>
-    </Router>
-  );
+  render() {
+    return (
+      <Router>
+        <ThemeProvider theme={this.state.theme}>
+          <Container data-testid="app-container">
+            <Nav handleThemeToggle={this.handleThemeToggle} />
+
+            <Switch>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+
+            <Footer />
+          </Container>
+        </ThemeProvider>
+      </Router>
+    );
+  }
 }
 
 export default App;
