@@ -14,7 +14,7 @@ class Home extends React.Component {
         <Header>Projects on Hold</Header>
         <List list={['DWC (direct water capture)']} />
         <Header>Future Projects</Header>
-        <List list={['Chatbot', 'Learn Java/C/or something', 'some sort of website for my portfolio']} />
+        <List list={['Chatbot', 'Learn Java/C/or something', 'new take on spotify new release site', 'new take on liverpool forum site/liverpool related site']} />
       </Container>
     );
   }
