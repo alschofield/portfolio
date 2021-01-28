@@ -7,7 +7,7 @@ class Footer extends React.Component {
   render() {
     return (
       <Container theme={this.props.theme.footer.container} data-testid='footer-container'>
-        Scho Technologies
+        Portfolio
       </Container>
     );
   }
