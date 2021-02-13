@@ -8,39 +8,37 @@ import Text from '../../../components/Text/Text';
 
 import { withTheme } from '../../../../themes';
 
-class NavItem extends React.Component {
-  render () {
-    if (this.props.type === 'anchor') {
-      return (
-        <Anchor {...this.props}>
-          <Text {...this.props}>{ this.props.value }</Text>
-        </Anchor>
-      );
-    } else if (this.props.type === 'image') {
-      return (
-        <Anchor {...this.props}>
-          <Image {...this.props} />
-        </Anchor>
-      );
-    } else if (this.props.type === 'icon') {
-      return (
-        <Anchor {...this.props}>
-          <Icon {...this.props} />
-        </Anchor>
-      );
-    } else if (this.props.type === 'button') {
-      return (
-        <Button {...this.props}>
-          <Text {...this.props}>{ this.props.value }</Text>
-        </Button>
-      );
-    } else {
-      return (
-        <Container {...this.props}>
-          <Text {...this.props}>{ this.props.value }</Text>
-        </Container>
-      );
-    }
+const NavItem = ({ ...props }) => {
+  if (props.type === 'anchor') {
+    return (
+      <Anchor {...props}>
+        <Text {...props}>{ props.value }</Text>
+      </Anchor>
+    );
+  } else if (props.type === 'image') {
+    return (
+      <Anchor {...props}>
+        <Image {...props} />
+      </Anchor>
+    );
+  } else if (props.type === 'icon') {
+    return (
+      <Anchor {...props}>
+        <Icon {...props} />
+      </Anchor>
+    );
+  } else if (props.type === 'button') {
+    return (
+      <Button {...props}>
+        <Text {...props}>{ props.value }</Text>
+      </Button>
+    );
+  } else {
+    return (
+      <Container {...props}>
+        <Text {...props}>{ this.props.value }</Text>
+      </Container>
+    );
   }
 }
 

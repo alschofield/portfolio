@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,36 +11,34 @@ import Home from './features/pages/home/Home';
 import './App.css';
 import { ThemeProvider, themes } from './themes';
 
-class App extends React.Component {
-  state = {
+const App = ({}) => {
+  let [state, updateState] = useState({
     themeName: 'dark',
     theme: themes.dark
+  })
+
+  const handleThemeToggle = () => {
+    const name = (state.themeName === 'light') ? 'dark' : 'light';
+    updateState({ theme: themes[name], themeName: name });
   };
 
-  handleThemeToggle = () => {
-    const name = (this.state.themeName === 'light') ? 'dark' : 'light';
-    this.setState({ theme: themes[name], themeName: name });
-  };
+  return (
+    <Router>
+      <ThemeProvider theme={state.theme}>
+        <Container data-testid="app-container">
+          <Nav handleThemeToggle={handleThemeToggle} />
 
-  render() {
-    return (
-      <Router>
-        <ThemeProvider theme={this.state.theme}>
-          <Container data-testid="app-container">
-            <Nav handleThemeToggle={this.handleThemeToggle} />
+          <Switch>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
 
-            <Switch>
-              <Route path="/">
-                <Home />
-              </Route>
-            </Switch>
-
-            <Footer />
-          </Container>
-        </ThemeProvider>
-      </Router>
-    );
-  }
+          <Footer />
+        </Container>
+      </ThemeProvider>
+    </Router>
+  );
 }
 
 export default App;

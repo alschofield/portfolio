@@ -29,6 +29,8 @@ const Item = styled.div`
   background-size: ${props => props.theme.backgroundSize || 'initial'};
   background-repeat: ${props => props.theme.backgroundRepeat || 'initial'};
   color: ${props => props.theme.color || 'initial'};
+  flex-wrap: ${props => props.theme.flexWrap || 'initial'};
+  border-radius: ${props => props.theme.borderRadius || '0px'};
 `;
 
 export default function Container(props) {

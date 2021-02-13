@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Item = styled.input`
+  border-image: ${props => props.theme.borderImage || 'none'};
+  border-style: ${props => props.theme.borderStyle || 'none'};
   position: ${props => props.theme.position || 'relative'};
   display: ${props => props.theme.display || 'initial'};
   height: ${props => props.theme.height || 'auto'};
@@ -31,6 +33,8 @@ const Item = styled.input`
   background-size: ${props => props.theme.backgroundSize || 'initial'};
   background-repeat: ${props => props.theme.backgroundRepeat || 'initial'};
   color: ${props => props.theme.color || 'initial'};
+  text-align: ${props => props.theme.textAlign || 'left' };
+  font-size: ${props => props.theme.fontSize || 'inherit' };
 `;
 
 export default function Input(props) {

@@ -31,6 +31,10 @@ const Item = styled.p`
   background-size: ${props => props.theme.backgroundSize || 'initial'};
   background-repeat: ${props => props.theme.backgroundRepeat || 'initial'};
   color: ${props => props.theme.color || 'initial'};
+
+  &.strikethrough {
+    text-decoration: line-through;
+  }
 `;
 
 export default function Text(props) {

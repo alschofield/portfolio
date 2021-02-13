@@ -31,6 +31,7 @@ const Item = styled.li`
   background-size: ${props => props.theme.backgroundSize || 'initial'};
   background-repeat: ${props => props.theme.backgroundRepeat || 'initial'};
   color: ${props => props.theme.color || 'initial'};
+  cursor: ${props => props.theme.cursor || 'auto'};
 `;
 
 export default function ListItem(props) {

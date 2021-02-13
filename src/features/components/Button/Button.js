@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Item = styled.button`
+  outline: none;
   position: ${props => props.theme.position || 'relative'};
   display: ${props => props.theme.display || 'initial'};
   height: ${props => props.theme.height || 'auto'};
@@ -31,6 +32,19 @@ const Item = styled.button`
   background-size: ${props => props.theme.backgroundSize || 'initial'};
   background-repeat: ${props => props.theme.backgroundRepeat || 'initial'};
   color: ${props => props.theme.color || 'initial'};
+  border: ${props => props.theme.border || 'none'};
+  cursor: ${props => props.theme.cursor || 'auto'};
+  font-size: ${props => props.theme.fontSize || 'initial'};
+  border-radius: ${props => props.theme.borderRadius};
+
+  :hover {
+    background-color: ${props => props.theme.color || 'initial'};
+    color: ${props => props.theme.backgroundColor || 'initial'};
+  }
+
+  :focus {
+    outline: none;
+  }
 `;
 
 export default function Button(props) {
