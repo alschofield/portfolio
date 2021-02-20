@@ -9,7 +9,7 @@ const Nav = ({ theme, handleThemeToggle }) => {
       <NavItem theme={{ ...theme.nav.item, ...theme.nav.icon }} type='image' src={`${process.env.PUBLIC_URL}/scho-logo.png`} href='/' />
       <Container theme={theme.nav.linksContainer}>
         <NavItem theme={{ ...theme.nav.item, ...theme.nav.link }} type="anchor" value="Calculator" href="https://calculator.alschofield.vercel.app/" />
-        <NavItem theme={{ ...theme.nav.item, ...theme.nav.link }} type="anchor" value="Todos App" href="https://todolist.alschofield.vercel.app/" />
+        <NavItem theme={{ ...theme.nav.item, ...theme.nav.link }} type="anchor" value="Todos App" href="https://todolist-app.alschofield.vercel.app/" />
       </Container>
       <NavItem theme={theme.nav.item} type='icon' icon='paint' onClick={handleThemeToggle} />
     </Container>
