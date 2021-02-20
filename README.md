@@ -1,6 +1,6 @@
 Portfolio site (start): current idea dual purpose of react template/showcase and portfolio site
 
-url: https://lit-scrubland-37427.herokuapp.com/
+url: https://portfolio-seven-opal.vercel.app/
 
 todos:
 - style theme change toggle better
