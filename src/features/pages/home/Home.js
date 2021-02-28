@@ -9,7 +9,7 @@ const Home = ({ theme }) => {
   return (
     <Container theme={theme.home.container} data-testid='home-container'>
       <Header>Current Projects</Header>
-      <List list={['learn rust (programming language)', 'study math (one of the bags has been secured)', 'create recommendations app', 'create recommendations server']} />
+      <List list={['learn rust (programming language)', 'study math (one of the bags has been secured)', 'create comments app', 'create comments server']} />
       <Header>Projects on Hold</Header>
       <List list={['DWC (direct water capture) (need to study more math and engineering first)', 'study engineering (want to refresh/learn more math first)']} />
       <Header>Future Projects</Header>
