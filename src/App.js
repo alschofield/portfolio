@@ -4,12 +4,13 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Footer from './features/main-components/footer/Footer';
-import Nav from './features/main-components/nav/Nav';
-import Container from './features/components/Container/Container';
+import { Footer, SchoNav as Nav } from 'schofield-main-components';
+import { Container } from 'schofield-common-components';
 import Home from './features/pages/home/Home';
 import './App.css';
-import { ThemeProvider, themes } from './themes';
+import { ThemeProvider, themes } from 'schofield-themes';
+
+const TITLE = 'Portfolio';
 
 const App = () => {
   let [state, updateState] = useState({
@@ -34,7 +35,7 @@ const App = () => {
             </Route>
           </Switch>
 
-          <Footer />
+          <Footer text={TITLE} />
         </Container>
       </ThemeProvider>
     </Router>
