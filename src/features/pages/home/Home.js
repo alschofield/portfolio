@@ -13,7 +13,7 @@ const Home = ({ theme }) => {
       <Header>Projects on Hold</Header>
       <List list={['DWC (direct water capture) (need to study more math and engineering first)', 'study engineering (want to refresh/learn more math first)']} />
       <Header>Future Projects</Header>
-      <List list={['proxy server', 'improvements on portfolio style and ideas for adding more stuff or flashy styling', 'finish up nft coin', 'pontificate on the potential of a podcast/talk show/interview thing', 'pontificate on wearables ive thought up in the past and maybe some new ones', 'pontificate on DWC and climate change in general more', 'learn assembly language', 'learn c', 'learn java']} />
+      <List list={['proxy server', 'implement auth in nav and apps', 'improvements on portfolio style and ideas for adding more stuff or flashy styling', 'finish up nft coin', 'pontificate on the potential of a podcast/talk show/interview thing', 'pontificate on wearables ive thought up in the past and maybe some new ones', 'pontificate on DWC and climate change in general more', 'learn assembly language', 'learn c', 'learn java']} />
     </Container>
   );
 }
