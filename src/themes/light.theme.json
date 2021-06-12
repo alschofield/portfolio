@@ -4,12 +4,15 @@
       "margin": "0px"
     },
     "paint": {
-      "width": "45px"
+      "width": "42px"
     }
   },
   "home": {
     "container" : {
-      "height": "calc(100vh - 60px)"
+      "height": "calc(100vh - 100px)",
+      "overflow": "auto",
+      "paddingTop": "0",
+      "marginTop": "40px"
     }
   }
 }
