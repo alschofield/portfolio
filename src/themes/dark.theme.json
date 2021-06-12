@@ -1,12 +1,4 @@
 {
-  "nav": {
-    "link": {
-      "margin": "0px"
-    },
-    "paint": {
-      "width": "42px"
-    }
-  },
   "home": {
     "container" : {
       "height": "calc(100vh - 100px)",
