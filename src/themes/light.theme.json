@@ -1,0 +1,16 @@
+{
+  "nav": {
+    "link": {
+      "margin": "0px"
+    },
+    "paint": {
+      "width": "45px"
+    }
+  },
+  "home": {
+    "container" : {
+      "height": "calc(100vh - 60px)"
+    }
+  }
+}
+
