@@ -8,17 +8,20 @@ const Home = ({ theme }) => {
 
   return (
     <Container theme={theme.home.container} data-testid='home-container'>
-      <Container theme={{ ...theme.home.section, ...theme.home.reccomendations }}>
-        
+      <Container theme={{ ...theme.home.section, ...theme.home.recommendations }}>
+        song recommendations
       </Container>
       <Container theme={{ ...theme.home.section, ...theme.home.cryptunes }}>
-        
+        working title
       </Container>
       <Container theme={{ ...theme.home.section, ...theme.home.proxy }}>
-        
+        rust proxy
       </Container>
       <Container theme={{ ...theme.home.section, ...theme.home.dwc }}>
-        
+        dwc
+      </Container>
+      <Container theme={{ ...theme.home.section, ...theme.home.react }}>
+        react stuff
       </Container>
       <Container theme={{ ...theme.home.section, ...theme.home.updates }}>
         <Header>Current Projects</Header>

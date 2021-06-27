@@ -4,28 +4,46 @@
       "height": "calc(100vh - 100px)",
       "color": "#ffffff",
       "overflow": "auto",
-      "paddingTop": "0",
+      "paddingLeft": "0px",
+      "paddingRight": "0px",
+      "paddingTop": "40px",
       "marginTop": "40px",
       "scrollSnapType": "y mandatory"
     },
     "section": {
+      "display": "flex",
       "height": "100%",
+      "minHeight": "800px",
       "width": "100%",
-      "scrollSnapAlign": "center"
+      "fontSize": "25px",
+      "scrollSnapAlign": "center",
+      "alignItems": "center",
+      "justifyContent": "center"
     },
     "recommendations": {
-      "background": ""
+      "background": "yellow",
+      "color": "black"
     },
     "cryptunes": {
-      "background": ""
+      "background": "beige",
+      "color": "black"
     },
     "dwc": {
-      "background": ""
+      "background": "teal"
     },
     "proxy": {
-      "background": ""
+      "background": "orange"
+    },
+    "react": {
+      "background": "lavender",
+      "color": "black"
     },
     "updates": {
+      "display": "block",
+      "fontSize": "unset",
+      "alignItems": "unset",
+      "justifyContent": "unset",
+      "padding": "15px",
       "background": ""
     }
   }
