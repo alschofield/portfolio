@@ -5,6 +5,26 @@
       "overflow": "auto",
       "paddingTop": "0",
       "marginTop": "40px"
+    },
+    "section": {
+      "height": "100%",
+      "width": "100%",
+      "scrollSnapAlign": "center"
+    },
+    "recommendations": {
+      "background": ""
+    },
+    "cryptunes": {
+      "background": ""
+    },
+    "dwc": {
+      "background": ""
+    },
+    "proxy": {
+      "background": ""
+    },
+    "updates": {
+      "background": ""
     }
   }
 }
