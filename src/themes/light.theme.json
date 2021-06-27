@@ -3,8 +3,11 @@
     "container" : {
       "height": "calc(100vh - 100px)",
       "overflow": "auto",
-      "paddingTop": "0",
-      "marginTop": "40px"
+      "paddingLeft": "0px",
+      "paddingRight": "0px",
+      "paddingTop": "40px",
+      "marginTop": "40px",
+      "scrollSnapType": "y mandatory"
     },
     "section": {
       "display": "flex",
